@@ -5,6 +5,10 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import { faThermometer1,faNavicon,faClose  } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import ProjectsArray from './ProjectsArray.js';
+
+
+
 
 
 
@@ -96,13 +100,15 @@ else{
 
     }
 
-
-
+const Allprojects=ProjectsArray;
+    
+console.log(ProjectsArray);
 
 
   return (
     <>
       
+{Allprojects.map((item)=>(  {item.id}  ))}
 
     <div className={ProjectClass+"Ui"} data-aos="fade-down" onClick={()=>{setIsModalActive("Ui1"); setIsModal(true)}} > <div className="absolute w-full h-full bg-gradient-to-b from-transparent to-black "></div> <img src="https://images.unsplash.com/photo-1692607334827-4da64dcf2221?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTl8fHxlbnwwfHx8fHw%3D" className='object-cover rounded-lg w-full h-full' alt="" />  <div className='absolute text-white bottom-0 p-5'>
     <p>Dashboard </p>
