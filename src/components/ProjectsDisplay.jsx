@@ -5,7 +5,9 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import { faThermometer1,faNavicon,faClose  } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import ProjectsArray from './ProjectsArray.js';
+import ProjectsArray from './ProjectsArray.json';
+
+import { Link } from 'react-router-dom';
 
 
 
@@ -18,6 +20,37 @@ const ProjectsDisplay = ({name}) => {
 
 const[isModal,setIsModal]=useState(false);
 const[isModalActive,setIsModalActive]=useState(" ");
+let ProjectName=" ";
+            let ProjectImage=" ";
+            let ProjectDescription=" ";
+            let ProjectUrl=" ";
+            
+
+            ProjectsArray.forEach(x=>   
+                {
+                    if(isModalActive===x.projectId){ 
+                     ProjectName=x.name;
+                     ProjectImage=x.image;
+                     ProjectDescription=x.description;
+                     ProjectUrl=x.url;
+        
+        
+                    
+                }
+        
+        
+               
+                }
+                )
+
+
+// useEffect(()=>
+
+// {
+
+
+    
+//     },[isModalActive])
 
 
 
@@ -100,47 +133,22 @@ else{
 
     }
 
-const Allprojects=ProjectsArray;
-    
-console.log(ProjectsArray);
+    // const Project= JSON.parse(ProjectsArray);
 
+console.log(ProjectsArray)
 
   return (
     <>
       
-{Allprojects.map((item)=>(  {item.id}  ))}
+   { ProjectsArray.map(projectarray =>{ 
+    return(
+    <div className={ProjectClass+ projectarray.projectType}  onClick={()=>{setIsModalActive(projectarray.projectId); setIsModal(true)}} > <div className="absolute w-full h-full bg-gradient-to-b from-transparent to-black "></div> <img src={projectarray.image} className='object-cover rounded-lg w-full h-full' alt="" />  <div className='absolute text-white bottom-0 p-5'>
+   <p>{projectarray.name}</p>
+   <small></small>
+</div>   </div> )
+} )}
+       
 
-    <div className={ProjectClass+"Ui"} data-aos="fade-down" onClick={()=>{setIsModalActive("Ui1"); setIsModal(true)}} > <div className="absolute w-full h-full bg-gradient-to-b from-transparent to-black "></div> <img src="https://images.unsplash.com/photo-1692607334827-4da64dcf2221?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTl8fHxlbnwwfHx8fHw%3D" className='object-cover rounded-lg w-full h-full' alt="" />  <div className='absolute text-white bottom-0 p-5'>
-    <p>Dashboard </p>
-    <small>url</small>
-</div>    </div>
-
-<div className={ProjectClass+"Ui"} data-aos="fade-down" onClick={()=>{setIsModalActive("Ui2"); setIsModal(true)}}> <div className="absolute w-full h-full bg-gradient-to-b from-transparent to-black "></div> <img src="https://images.unsplash.com/photo-1692610492938-37a4eed63ac0?auto=format&fit=crop&q=80&w=1964&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" className='object-cover rounded-lg  w-full h-full' alt="" />  <div className='absolute text-white bottom-0 p-5'>
-    <p>Dashboard</p>
-    <small>url</small>
-</div>    </div>
-
-<div className={ProjectClass+"Js"} data-aos="fade-down" onClick={()=>{setIsModalActive("Js"); setIsModal(true)}}> <div className="absolute w-full h-full bg-gradient-to-b from-transparent to-black "></div> <img src="https://images.unsplash.com/photo-1692610492938-37a4eed63ac0?auto=format&fit=crop&q=80&w=1964&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" className='object-cover rounded-lg w-full h-full' alt="" />  <div className='absolute text-white bottom-0 p-5'>
-    <p>Dashboard</p>
-    <small>url</small>
-</div>    </div>
-
-<div className={ProjectClass+"Rt"} data-aos="fade-down" onClick={()=>{setIsModalActive("Rt"); setIsModal(true)}}> <div className="absolute   w-full h-full bg-gradient-to-b from-transparent to-black"></div> <img src="https://images.unsplash.com/photo-1692610492938-37a4eed63ac0?auto=format&fit=crop&q=80&w=1964&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" className='object-cover rounded-lg w-full h-full' alt="" />  <div className='absolute bottom-0 p-5 text-white'>
-    <p>-Dashboard</p>
-    <small>url</small>
-</div>    </div>
-
-<div className={ProjectClass+"Php"} data-aos="fade-down" onClick={()=>{setIsModalActive("Php"); setIsModal(true)}} > <div className="absolute w-full h-full  bg-gradient-to-b from-transparent to-black "></div> <img src="https://images.unsplash.com/photo-1692610492938-37a4eed63ac0?auto=format&fit=crop&q=80&w=1964&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" className='object-cover rounded-lg w-full h-full' alt="" />  <div className='absolute text-white bottom-0 p-5'>
-    <p>touched  </p>
-    <small>url</small>
-</div>    </div>
-
-<div className={ProjectClass+"Rt"} data-aos="fade-down" onClick={()=>{setIsModalActive("Rt"); setIsModal(true)  }}> 
-<div className="absolute w-full h-full  bg-gradient-to-b from-transparent to-black "></div> 
-<img src="https://images.unsplash.com/photo-1692610492938-37a4eed63ac0?auto=format&fit=crop&q=80&w=1964&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" className='object-cover rounded-lg w-full h-full' alt="" />  <div className='absolute text-white bottom-0 p-5'>
-    <p>Dashboard</p>
-    <small>hi url</small>
-</div>    </div>
 
 
 { isModal ? ( <div className={" flex items-center justify-center  sm:w-[900px] w-full h-full absolute z-[999]"}>
@@ -151,18 +159,18 @@ console.log(ProjectsArray);
     </div>
     
     <div className="flex flex-col h-96 p-5 items-center gap-5">   
-    <div className={"w-64 h-74 relative hover:opacity-80 delay-150 hover:shadow-xl transition-all new-transition duration-900 rounded-lg "} data-aos="fade-down"> <div className="absolute w-full h-full bg-gradient-to-b from-transparent to-black "></div> <img src="https://images.unsplash.com/photo-1692607334827-4da64dcf2221?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTl8fHxlbnwwfHx8fHw%3D" className='object-cover rounded-lg w-full h-full' alt="" />  <div className='absolute text-white bottom-0 p-5'>
-        <p>Dashboard </p>
-        <small>url</small>
+    <div className={"w-64 h-74 relative hover:opacity-80 delay-150 hover:shadow-xl transition-all new-transition duration-900 rounded-lg "} data-aos="fade-down"> <div className="absolute w-full h-full bg-gradient-to-b from-transparent to-black "></div> <img src={ProjectImage} className='object-cover rounded-lg w-full h-full' alt="" />  <div className='absolute text-white bottom-0 p-5'>
+        <p>{ProjectName} </p>
+        <small></small>
     </div>    </div>
     
-    <h1 className='text-hover-blue font-bold text-xl '>Project Name</h1>
-    <p className='text-center text-white text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias soluta sint sunt perferendis sequi iste quaerat expedita minus accusantium rem inventore architecto commodi, dolor cupiditate voluptatibus aperiam placeat nam repellat.</p>
+    <h1 className='text-hover-blue font-bold text-xl '>{ProjectName}</h1>
+    <p className='text-center text-white text-sm'>{ProjectDescription}</p>
     <small></small>
     <hr />
     
-    <button  className=' w-40 h-60 rounded-xl bg-btn-blue text-white p-1 items-center justify-center '>
-    View Project
+    <button href={ProjectUrl} className=' w-40 h-60 rounded-xl bg-btn-blue text-white p-1 items-center justify-center '>
+   <Link  to="singleproject" > View Project </Link>
     </button>
     
     </div>

@@ -5,7 +5,7 @@ import { faNavicon,faClose } from '@fortawesome/free-solid-svg-icons'
 import { useState } from 'react'
 import 'aos/dist/aos.css';
 import AOS from 'aos';
-import { Link } from 'react-scroll'
+import { Link } from 'react-router-dom'
 
 
 const NavBar = () => {
@@ -20,6 +20,7 @@ const[activeNav,setActiveNav]=useState(false);
 
 
     
+    
 
   return (
     <div data-aos="fade-left"  className='w-full flex justify-between p-7 text-white relative z-[12] '>
@@ -27,18 +28,10 @@ const[activeNav,setActiveNav]=useState(false);
         Dani-<span className='font-bold'> El </span> </Link></h1>
    
      <ul className={activeNav ?navClasses :navClassesHidden} id='nav'  >
-        <li className='hover:text-hover-blue transition duration-700 cursor-default text-[20px] '><Link to="hero" smooth={true} 
-offset={50} 
-duration={500}>  Home</Link></li>
-        <li className='hover:text-hover-blue transition duration-700 cursor-default text-[20px] '><Link to="about" smooth={true} 
-offset={50} 
-duration={500}>  About me</Link></li>
-        <li className='hover:text-hover-blue transition duration-700 cursor-default text-[20px] '><Link to="project" smooth={true} 
-offset={50} 
-duration={500}>  Projects</Link></li>
-        <li className='hover:text-hover-blue transition duration-700 cursor-default text-[20px] '><Link to="footer" smooth={true} 
-offset={50} 
-duration={500}>  Contact</Link></li>
+        <li className='hover:text-hover-blue transition duration-700 cursor-default text-[20px] '><Link to="/" >  Home</Link></li>
+        <li className='hover:text-hover-blue transition duration-700 cursor-default text-[20px] '><Link to="/home#about" >  About me</Link></li>
+        <li className='hover:text-hover-blue transition duration-700 cursor-default text-[20px] '><Link to="/home" >  Projects</Link></li>
+        <li className='hover:text-hover-blue transition duration-700 cursor-default text-[20px] '><Link to="/home" >  Contact</Link></li>
         <li>
         
         <Btn name="Download Cv" myClass="bg-btn-blue hover:bg-hover-blue hover:shadow-lg" />

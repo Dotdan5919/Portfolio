@@ -25,7 +25,7 @@ const AboutPage = () => {
 </div>
 
 <div className="text flex justify-between flex-col gap-10 ">
-<div className="flex flex-col gap-6 w-[600px] sm:p-0 p-2">  
+<div className="flex flex-col gap-6 sm:w-[600px] w-96 sm:p-0 p-2">  
 <h1 className='text-[40px] text-bold text-white'>About me</h1>
 <p className='text-white text-sm'>
 
