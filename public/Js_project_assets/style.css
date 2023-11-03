@@ -1,0 +1,327 @@
+/* calculator styles */
+.calculator-container
+{
+margin-top: 80px;
+
+width: 60%;
+flex-wrap: wrap;
+/* background-color: red; */
+align-items: center;
+justify-content: center;
+
+/* padding: 70px; */
+/* margin: 0 190px; */
+ gap: 10px;
+margin: 80px auto;
+flex-direction:row;
+
+display: flex;
+height: 70%;
+}
+
+.calculator-container  
+h3{
+    /* width: 30%; */
+    max-width: 40%;
+font-size: 40px;
+color: rgb(255, 255, 255);
+
+
+/* background-color:#FCA61D; */
+
+
+
+
+}
+
+.calculator{
+   
+
+    /* width: 40%; */
+    background-color:#EEECED;
+    border-radius: 2%;
+   
+   display: flex;
+   flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    padding: 20px;
+    position: relative;
+    /* width: 30%; */
+
+   
+}
+
+.screen{
+
+text-align: end;
+
+width: 100%;
+/* border-radius: 10%; */
+padding: 40px;
+
+
+
+}
+
+.row1 , .row2, .row3 , .row4 ,.row5
+{
+
+display: flex;
+flex-wrap: nowrap;
+
+gap:10px;
+
+align-items: center;
+justify-content: center;
+
+}
+.row1 .add-and-subtract
+{
+width: 20%;
+padding-left: 10px;
+
+
+}
+
+.row5 .orange, .row1 .orange , .row3 .orange ,.row2 .orange ,.row4 .orange{
+
+background-color: #FCA61D;
+color: white;
+
+}
+
+
+.row1 div,.row2 div ,.row3 div ,.row4 div , .row5 div 
+{
+    box-shadow:0px 4px 5px 0px rgba(136, 135, 135, 0.25);;
+background-color:#F9F9F9 ;
+width:100%;
+height:auto;
+padding: 7px 20px;
+transition: ease .7s
+
+}
+
+.row5 .zero
+{
+flex-basis:600%;
+
+
+} 
+
+
+.calculator div div:hover{
+
+    box-shadow: 0px 4px 5px 0px rgba(136, 135, 135, 0.25);
+    opacity: .6;
+
+
+}
+
+.calculator .screen h1 , .calculator .screen h5{
+
+position:absolute;
+
+}
+
+.screen h1 {
+
+top:-10;
+right: 0;
+
+padding-bottom: 1rem;
+padding-right: 1.5rem;
+
+}
+
+.screen h5{
+    top:12%;
+right: 0;
+
+padding-bottom: 1rem;
+padding-right: 1.5rem;
+
+}
+
+
+
+
+
+/* media queries for calculator */
+@media only screen and (max-width: 600px)
+{
+    .calculator-container
+    {
+    margin-top: 80px;
+    display: none;
+    width: 100%;
+   flex-direction: column;
+    /* background-color: red; */
+    align-items: center;
+    justify-content: center;
+    
+    /* padding: 70px; */
+    /* margin: 0 190px; */
+    /* gap: 50px; */
+    
+    }
+    
+    .calculator-container  
+    h3{
+        /* width: 30%; */
+       
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    
+    
+    /* background-color:#FCA61D; */
+    
+    
+    
+    
+    }
+
+
+
+
+}
+
+
+/* todo list app */
+.todo-list{
+
+  
+    color: white;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 2px;
+    flex-direction: column;
+    gap: 30px;
+    
+    }
+    
+    .todo-app
+    {
+    
+        border-radius: 10px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+      gap: 10px;  
+      width: 400px;
+      max-height:400px;
+      overflow: auto;
+    
+    
+    
+    
+    }
+    
+    .todo-app h1
+    {
+    
+    color: black;
+    font-size:larger;
+    
+    
+    }
+    
+    
+    .todo-app div{
+    
+    display: flex;
+    position: relative;
+    width: 100%;
+    
+    
+    }
+    
+    .add-task{
+    width: 100%;
+    border-style: none;
+    background-color: antiquewhite;
+    padding: 10px;
+    border-radius: 20px;
+    }
+    
+    .add-task-btn{
+    /* width:fit-content; */
+    border-radius: 20px;
+    padding: 10px 30px;
+    border-style: none;
+    position:absolute;
+    right: 0;
+    font-size: small;
+    background-color: #FCA61D;
+    color: white;
+    transition: .45s;
+    
+    
+    }
+    
+    .task label{
+    
+    color: black;
+    
+    }
+    
+    .task{
+    
+        display: flex;
+    
+        padding: 20px 15px;
+        transition: .45s;
+        gap: 9px;
+        position: relative;
+    }
+    
+    .task:hover{
+    
+    background-color: #F2EAEA;
+    
+    }
+    
+    .task:hover::before
+    {
+        position: absolute;
+    content: '';
+    width: 6px;
+    height: 60px;
+    background-color:#FCA61D;
+    top: 0;
+    left: 0;
+    
+    }
+    
+    .x{
+    
+    margin-left: auto;
+    color: black;
+    
+    
+    
+    
+    }
+    
+    .add-task-btn:hover{
+    
+    box-shadow: 0px 4px 8px 0px rgba(252, 166, 29, 0.50), 0px 4px 8px 0px rgba(231, 201, 153, 0.20);
+    
+    }
+    
+    .add-task:focus{
+    
+        border-style: none ;
+        outline: none;
+    }
+    
+    .all-tasks
+    {
+    
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+    }

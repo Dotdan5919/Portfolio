@@ -5,7 +5,7 @@
     "image": "./my-project.jpg",
     "projectType": "Ui",
     "projectId": 1,
-    "url": "#"
+    "url": ""
   },
   {
     "name": "triptop",
@@ -28,63 +28,49 @@
     "description": "This is a description of the project",
     "image": "https://images.unsplash.com/photo-1692607334827-4da64dcf2221?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTl8fHxlbnwwfHx8fHw%3D",
     "projectType": "Js",
-    "projectId": 5,
-    "url": "newPg"
+    "projectId": 4,
+    "url": ""
   },
-  {
-    "name": "counter App",
-    "description": "This is a description of the project",
-    "image": "https://images.unsplash.com/photo-1692607334827-4da64dcf2221?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTl8fHxlbnwwfHx8fHw%3D",
-    "projectType": "Js",
-    "projectId": 6,
-    "url": "newPg"
-  },
+ 
   {
     "name": "to-do list app",
     "description": "This is a description of the project",
     "image": "https://images.unsplash.com/photo-1692607334827-4da64dcf2221?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTl8fHxlbnwwfHx8fHw%3D",
     "projectType": "Js",
-    "projectId": 7,
-    "url": "newPg"
+    "projectId": 5,
+    "url": ""
   },
   {
     "name": "weather App",
     "description": "This is a description of the project",
     "image": "https://images.unsplash.com/photo-1692607334827-4da64dcf2221?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTl8fHxlbnwwfHx8fHw%3D",
     "projectType": "Js",
-    "projectId": 8,
-    "url": "newPg"
+    "projectId": 6,
+    "url": ""
   },
   {
     "name": "quiz app",
     "description": "This is a description of the project",
     "image": "https://images.unsplash.com/photo-1692607334827-4da64dcf2221?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTl8fHxlbnwwfHx8fHw%3D",
     "projectType": "Js",
-    "projectId": 9,
-    "url": "newPg"
+    "projectId": 7,
+    "url": ""
   },
-  {
-    "name": "portfolio website",
-    "description": " .",
-    "image": "./my-project.jpg",
-    "projectType": "Rt",
-    "projectId": 10,
-    "url": "#"
-  },
+
   {
     "name": "movie app",
     "description": "This is a description of the project",
     "image": "https://images.unsplash.com/photo-1692607334827-4da64dcf2221?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTl8fHxlbnwwfHx8fHw%3D",
     "projectType": "Rt",
-    "projectId": 11,
-    "url": "newPg"
+    "projectId": 8,
+    "url": ""
   },
   {
     "name": "BETTER SUPPORT FOR SKIN AND SOFT TISSUE INFECTIONS FOR PEOPLE WHO INJECT DRUGS",
     "description": "Developed the backend of a website using PHP Laravel, including an admin panel and mini chatting system. The website allows users to create and manage accounts, post and view content, and communicate with each other through the mini chat system. The admin panel provides administrators with the ability to manage users, content, and settings.",
     "image": "https://images.unsplash.com/photo-1692607334827-4da64dcf2221?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTl8fHxlbnwwfHx8fHw%3D",
     "projectType": "Php",
-    "projectId": 12,
-    "url": "https://projectholistique.com/"
+    "projectId": 9,
+    "url": ""
   }
 ]
