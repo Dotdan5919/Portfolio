@@ -325,3 +325,110 @@ padding-right: 1.5rem;
     
     
     }
+
+
+    /* quiz app */
+    .my-modal .head
+{
+
+background-color:#49BBBD;
+width: 100%;
+height: auto%;
+padding: 10px;
+color:white;
+padding-top: -10px;
+text-align: center;
+
+
+
+}
+
+.modal-body{
+    
+    
+/* padding: 100px; */
+margin: 30px;
+/*  */
+
+}
+
+.input-group {
+
+display: flex;
+gap: 10px;
+margin: 10px;
+flex-wrap: nowrap;
+flex-shrink: 0;
+flex-grow: 0;
+
+
+
+}
+
+.navigations{
+
+display: flex;
+justify-content: space-between;
+padding-top:60px;
+
+}
+
+.navigations button
+{
+
+background-color: #49BBBD;
+color: white;
+transition: .45s;
+
+
+}
+.navigations button:hover{
+
+    background-color: #6ecbcd;
+    color: white;
+    
+
+}
+
+.question p{
+
+font-size:x-large;
+color:#49BBBD;
+}
+
+.answers .input-group
+{
+
+/* font-size: x-large; */
+
+}
+
+.input-group input[type="radio"]
+{
+min-width: 20px;
+  
+}
+
+label{
+    transition: .60s;
+    width: 90%;
+    font-size: larger;
+
+}
+.input-group label:hover{
+
+color: #6ecbcd;
+
+}
+
+
+
+
+
+input[type="radio"]:checked
+{
+
+
+
+
+}

@@ -42,43 +42,43 @@ case "4":
   divContainer=(
   
   
-    <div class="calculator w-full ">
+    <div className="calculator w-full ">
 
-       <div class="screen">
+       <div className="screen">
         <h5 className='mb-4'>  </h5>
-        <h1 class="main-text font-extrabold text-3xl"> </h1>
+        <h1 className="main-text font-extrabold text-3xl"> </h1>
 
        </div>
 
-       <div class="row1">
-        <div class="c btn">C</div>
-        <div class="add-and-subtract btn-symbol">+/-</div>
-        <div class="percentage btn-del">DEL</div>
-        <div class="slash orange btn-op">/</div>
+       <div className="row1">
+        <div className="c btn">C</div>
+        <div className="add-and-subtract btn-symbol">+/-</div>
+        <div className="percentage btn-del">DEL</div>
+        <div className="slash orange btn-op">/</div>
        </div>
-       <div class="row2">
-        <div class="seven btn-num">7</div>
-        <div class="eight btn-num">8</div>
-        <div class="nine btn-num">9</div>
-        <div class="multiply orange btn-op">*</div>
+       <div className="row2">
+        <div className="seven btn-num">7</div>
+        <div className="eight btn-num">8</div>
+        <div className="nine btn-num">9</div>
+        <div className="multiply orange btn-op">*</div>
        </div>
-       <div class="row3">
-        <div class="four btn-num">4</div>
-        <div class="five btn-num">5</div>
-        <div class="six btn-num">6</div>
-        <div class="minus orange btn-op">-</div>
+       <div className="row3">
+        <div className="four btn-num">4</div>
+        <div className="five btn-num">5</div>
+        <div className="six btn-num">6</div>
+        <div className="minus orange btn-op">-</div>
        </div>
-       <div class="row4">
-        <div class="one btn-num">1</div>
-        <div class="two btn-num">2</div>
-        <div class="three btn-num">3</div>
-        <div class="plus orange btn-op">+</div>
+       <div className="row4">
+        <div className="one btn-num">1</div>
+        <div className="two btn-num">2</div>
+        <div className="three btn-num">3</div>
+        <div className="plus orange btn-op">+</div>
        </div>
-       <div class="row5">
-        <div class="zero btn-num">0</div>
+       <div className="row5">
+        <div className="zero btn-num">0</div>
         
-        <div class="decimal-point btn-num">.</div>
-        <div class="equals orange sum">=</div>
+        <div className="decimal-point btn-num">.</div>
+        <div className="equals orange sum">=</div>
        </div>
 </div>);
 
@@ -89,18 +89,18 @@ break;
 
 case "5":
 
-divContainer=(<div class="todo-list"><div class="todo-app">
+divContainer=(<div className="todo-list"><div className="todo-app">
 <h1>To-do list</h1>
 <div action="">
-<input type="text" class="add-task" placeholder="Add your task"/>
-<input type="submit" value="Add" class="add-task-btn bg-yellow-500"/>
+<input type="text" className="add-task text-black" placeholder="Add your task"/>
+<input type="submit" value="Add" className="add-task-btn bg-yellow-500"/>
 </div>
-<div class="all-tasks">
+<div className="all-tasks">
 
-<div class="task">
-<input type="checkbox" name="" id="task-checker"/ >
-<label class="" for="task-checker">Cooking</label>
-<span class="x"><i class="fa fa-close "></i></span>
+<div className="task">
+<input type="checkbox" name="" id="task-checker" />
+<label className="" for="task-checker">Cooking</label>
+<span className="x"><i className="fa fa-close "></i></span>
 
 </div>
 
@@ -116,6 +116,51 @@ description="lorem     l l l l     l ll  ";
 break;
 
 
+case "7":
+  divContainer=( <div className="col-md-8 my-modal" >
+  <div className="card">
+      <div className="">
+          <div className="head"> <h4>Module One: Assessment </h4>
+          </div>
+
+          <div className="modal-body">  
+              <div className="question">       
+              <p>     What is stigma in the context of healthcare ?   </p>
+              </div>
+                  <div className="answers">   
+                    
+
+                   
+                    <div className="hide id" >3</div>
+                       
+              </div>
+            
+              <div className="navigations">
+                  <button className="navigation btn previous" id="previous">Previous</button>
+                  <button className="navigation btn next btn-learn-more" id="next">Next</button>
+
+
+              </div>
+
+              
+                  
+                
+              
+          </div>
+          
+
+
+
+      </div>
+
+  </div>
+</div>
+    
+    );
+  
+  name="Quiz app";
+  description="lorem     l l l l     l ll  ";
+break;
 
 
 default:
