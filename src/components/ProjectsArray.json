@@ -2,7 +2,7 @@
   {
     "name": "Portfolio Project",
     "description": "This portfolio website was designed with Figma, a powerful design tool that allowed me to create a visually appealing and user-friendly experience. The site features a clean and modern design, with a focus on showcasing my work in the best possible light.I used Figma to create a variety of different components and layouts, which I then assembled to create the final website..",
-    "image": "./my-project.jpg",
+    "image": "./images/my-project.jpg",
     "projectType": "Ui",
     "projectId": 1,
     "url": ""
@@ -10,7 +10,7 @@
   {
     "name": "triptop",
     "description": "This UI project for a traveling app was designed to be both visually appealing and user-friendly. The app features a clean and modern design, with a focus on making it easy for users to find the information they need and book their travel arrangements.I used a variety of design elements to create a visually appealing and engaging experience for the user. For example, I used bright colors and bold fonts to create a sense of excitement and adventure. I also used high-quality images and videos to showcase the different destinations that the app offers.",
-    "image": "./triptop.jpg",
+    "image": "./images/triptop.jpg",
     "projectType": "Ui",
     "projectId": 2,
     "url": "https://www.behance.net/gallery/150174999/Trip-top-ui-design"
@@ -18,24 +18,24 @@
   {
     "name": "Better taste Food app",
     "description": "This food delivery app UI design was created with Figma, a powerful design tool that allowed me to create a visually appealing and user-friendly experience. The app features a clean and modern design, with a focus on making it easy for users to find the food they want and order it quickly and easily.I used Figma to create a variety of different components and layouts, which I then assembled to create the final app. This allowed me to experiment with different ideas and iterate quickly, until I was happy with the final result.",
-    "image": "./foodapp.jpg",
+    "image": "./images/foodapp.jpg",
     "projectType": "Ui",
     "projectId": 3,
     "url": "https://www.behance.net/gallery/152078593/Better-taste-Food-app-Case-study"
   },
   {
-    "name": "calculator",
-    "description": "This is a description of the project",
-    "image": "https://images.unsplash.com/photo-1692607334827-4da64dcf2221?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTl8fHxlbnwwfHx8fHw%3D",
+    "name": "Calculator",
+    "description": "This is a Calculator, was created with vanilla javascript.  It is a simple Dom manipulation \n Application",
+    "image": "./images/Calculator.png",
     "projectType": "Js",
     "projectId": 4,
     "url": ""
   },
  
   {
-    "name": "to-do list app",
+    "name": "To-do list app",
     "description": "This is a description of the project",
-    "image": "https://images.unsplash.com/photo-1692607334827-4da64dcf2221?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTl8fHxlbnwwfHx8fHw%3D",
+    "image": "./images/Todo_app.png",
     "projectType": "Js",
     "projectId": 5,
     "url": ""
@@ -49,9 +49,9 @@
     "url": ""
   },
   {
-    "name": "quiz app",
+    "name": "Quiz app",
     "description": "This is a description of the project",
-    "image": "https://images.unsplash.com/photo-1692607334827-4da64dcf2221?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTl8fHxlbnwwfHx8fHw%3D",
+    "image": "./images/quiz_app.png",
     "projectType": "Js",
     "projectId": 7,
     "url": ""

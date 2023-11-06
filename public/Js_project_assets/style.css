@@ -331,7 +331,7 @@ padding-right: 1.5rem;
     .my-modal .head
 {
 
-background-color:#49BBBD;
+
 width: 100%;
 height: auto%;
 padding: 10px;
@@ -376,7 +376,7 @@ padding-top:60px;
 .navigations button
 {
 
-background-color: #49BBBD;
+
 color: white;
 transition: .45s;
 
@@ -384,7 +384,7 @@ transition: .45s;
 }
 .navigations button:hover{
 
-    background-color: #6ecbcd;
+    background-color: #074546;
     color: white;
     
 
@@ -393,7 +393,7 @@ transition: .45s;
 .question p{
 
 font-size:x-large;
-color:#49BBBD;
+
 }
 
 .answers .input-group
@@ -417,7 +417,7 @@ label{
 }
 .input-group label:hover{
 
-color: #6ecbcd;
+color: #053637;
 
 }
 

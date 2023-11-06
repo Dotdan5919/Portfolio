@@ -458,118 +458,101 @@ close && close.addEventListener('click',function(e)
 
 
 const questions=[
-    {   question:"Begin your first Assesment",
-    answers:[
-       
+     {   question:"Begin your first Assesment",
+answers:[
+   
 
-    ]
-
-},
-
-
-    {   question:"What is stigma in the context of healthcare ?",
-        answers:[
-            { text:"A medical treatment for mental health disorders",correct:false},
-            { text:"Positive attitudes and beliefs about certain conditions.",correct:false},
-            { text:"Negative attitudes, beliefs, and stereotypes towards certain conditions  or identities.",correct:true},
-            { text:"A type of healthcare insurance",correct:false},
-
-        ]
-
-    }
-    ,
-    {   question:"How does stigma impact the health of people who inject drugs (PWID)?",
-    answers:[
-        { text:" Stigma has no effect on the health of PWID.",correct:false},
-        { text:" Stigma encourages PWID to seek medical help promptly.",correct:false},
-        { text:"Stigma may deter PWID from seeking healthcare services.",correct:true},
-        { text:"Stigma leads to improved treatment adherence among PWID.",correct:false},
-
-    ]
+]
 
 },
-{
-
-    question:"Why was John hesitant to seek care?",
-    answers:[
-        { text:" He had no health issues that required medical attention.",correct:false},
-        { text:"He had a previous positive experience with a healthcare provider.",correct:false},
-        { text:"He was receiving care from a community health center.",correct:false},
-        { text:"He experienced stigma from a healthcare provider in the past.",correct:true}
-
-    ]
-
-
-},
-{
-
-    question:"What positive experience did John have at the community health center?",
-    answers:[
-        { text:" He was treated poorly and faced discrimination.",correct:false},
-        { text:"He was turned away without any explanation",correct:false},
-        { text:"He received non-judgmental and supportive care.",correct:true},
-        { text:"He was denied access to healthcare services.",correct:false}
-
-    ]
-
-
-},
-{
-
-    question:"What lesson does John's case scenario teach us about access to healthcare services for people who inject drugs (PWID)?",
-    answers:[
-        { text:"Providing non-judgmental and supportive care is crucial for PWID's health.",correct:true},
-        { text:"Stigmatizing healthcare providers are the only option for PWID.",correct:false},
-        { text:"People who inject drugs should avoid seeking any healthcare services.",correct:false},
-        { text:"People who inject drugs can only access care from large hospitals.",correct:false}
-
-    ]
-
-
-},
-{
-
-    question:"What is the primary purpose of using person-first language when referring to people who inject drugs?",
-    answers:[
-        { text:"To emphasize their drug use as a defining characteristic.",correct:false},
-        { text:"To stigmatize and label individuals based on their behavior.",correct:false},
-        { text:"To humanize and prioritize the individual over their behavior.",correct:true},
-        { text:"To make their drug use the central topic of conversation. ",correct:false}
-
-    ]
-
-
-},
-{
-
-    question:"How does person-first language contribute to reducing stigma?",
-    answers:[
-        { text:"It highlights the behavior over the individual.",correct:false},
-        { text:"It reinforces stereotypes and negative attitudes. ",correct:false},
-        { text:"It prioritizes the individual over their condition or behavior.",correct:true},
-        { text:"It encourages focusing solely on the behavior. ",correct:false}
-
-    ]
-
-
-}
-
-
-
-
+    {
+        
+        question: "What is the capital of France?",
+        answers: [
+          { text: "Paris", correct: true },
+          { text: "London", correct: false },
+          { text: "Berlin", correct: false },
+          { text: "Rome", correct: false },
+        ],
+      },
+      {
+        question: "What is the largest ocean in the world?",
+        answers: [
+          { text: "Pacific Ocean", correct: true },
+          { text: "Atlantic Ocean", correct: false },
+          { text: "Indian Ocean", correct: false },
+          { text: "Arctic Ocean", correct: false },
+        ],
+      },
+      {
+        question: "What is the highest mountain in the world?",
+        answers: [
+          { text: "Mount Everest", correct: true },
+          { text: "K2", correct: false },
+          { text: "Kanchenjunga", correct: false },
+          { text: "Lhotse", correct: false },
+        ],
+      },
+      {
+        question: "What is the most populous country in the world?",
+        answers: [
+          { text: "China", correct: true },
+          { text: "India", correct: false },
+          { text: "United States", correct: false },
+          { text: "Indonesia", correct: false },
+        ],
+      },
+      {
+        question: "What is the chemical formula for water?",
+        answers: [
+          { text: "H2O", correct: true },
+          { text: "CO2", correct: false },
+          { text: "O3", correct: false },
+          { text: "NH3", correct: false },
+        ],
+      },
+      {
+        question: "What is the name of the largest moon in our solar system?",
+        answers: [
+          { text: "Ganymede", correct: true },
+          { text: "Titan", correct: false },
+          { text: "Callisto", correct: false },
+          { text: "Io", correct: false },
+        ],
+      },
+      {
+        question: "What is the name of the planet that is closest to the sun?",
+        answers: [
+          { text: "Mercury", correct: true },
+          { text: "Venus", correct: false },
+          { text: "Earth", correct: false },
+          { text: "Mars", correct: false },
+        ],
+      },
+      {
+        question: "What is the name of the most venomous snake in the world?",
+        answers: [
+          { text: "Inland taipan", correct: true },
+          { text: "Death adder", correct: false },
+          { text: "Eastern brown snake", correct: false },
+          { text: "Black mamba", correct: false },
+        ],
+      },
 
 
 ];
 
-let ChosenAnswers=[{question:"Begin your first Assesment?",value:"",Iscorrect:""},
-{question:"What is stigma in the context of healthcare ?",value:"",Iscorrect:""},
+let ChosenAnswers=[{question:"What is the capital of France?",value:"", Iscorrect:""},
+{question:"What is the largest ocean in the world?",value:"",Iscorrect:""},
 
-{question:"How does stigma impact the health of people who inject drugs (PWID)?",value:"",Iscorrect:""},
-{question:"Why was John hesitant to seek care?",value:"",Iscorrect:""},
-{question:"What positive experience did John have at the community health center?",value:"",Iscorrect:""},
-{question:"What lesson does John's case scenario teach us about access to healthcare services for people who inject drugs (PWID)?",value:"",Iscorrect:""},
-{question:"What is the primary purpose of using person-first language when referring to people who inject drugs?",value:"",Iscorrect:""},
-{question:"How does person-first language contribute to reducing stigma?",value:"",Iscorrect:""}
+{question:"What is the highest mountain in the world?",value:"",Iscorrect:""},
+{question:"What is the most populous country in the world?",value:"",Iscorrect:""},
+{question:"What is the chemical formula for water?",value:"",Iscorrect:""},
+
+
+{question:"What is the name of the largest moon in our solar system?",value:"",Iscorrect:""},
+{question:"What is the name of the planet that is closest to the sun?",value:"",Iscorrect:""},
+{question:"What is the name of the most venomous snake in the world?",value:"",Iscorrect:""}
 
 
 ];
@@ -686,7 +669,7 @@ let questionElement=document.querySelector('.question p');
 
            
             
-            for (let i = 1; i <= allAnswers.length; i++) {
+            for (let i = 0; i <= allAnswers.length; i++) {
                 
                 if(allAnswers[i].question===currentQuestion.question)
                 {
@@ -963,7 +946,7 @@ function showMultipleQuestion(Q,allQuestions)
           {
             input.checked="checked";
      
-
+            
           }
            
            
@@ -976,14 +959,14 @@ function showMultipleQuestion(Q,allQuestions)
         inputed.addEventListener("change",function(e){
          e.preventDefault();
            
-            
+        
             if( inputed.checked){
                 
                 
                 
-            for (let i = 0; i <= allAnswers.length; i++) {
+            for (let i = 0; i < allAnswers.length; i++) {
 
-                console.log(allAnswers[i].question);
+               
                 
                 if(allAnswers[i].question===currentQuestion.question)
                 {
@@ -1383,10 +1366,10 @@ answerDividen=allQuestions.length;
    
 break;
 case "3":
-    allQuestions=questions.slice(3,6);
-allAnswers=ChosenAnswers.slice(3,6);
+    allQuestions=questions.slice(0,8);
+allAnswers=ChosenAnswers.slice(0,8);
 QuestionIndex=0;
-answerDividen=allQuestions.length;
+answerDividen=allQuestions.length-1;
  showMultipleQuestion(QuestionIndex,allQuestions);
 
  

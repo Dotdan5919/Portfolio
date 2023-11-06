@@ -117,27 +117,27 @@ break;
 
 
 case "7":
-  divContainer=( <div className="col-md-8 my-modal" >
-  <div className="card">
-      <div className="">
-          <div className="head"> <h4>Module One: Assessment </h4>
+  divContainer=( <div className="  my-modal" >
+  <div className="card bg-white h-auto">
+      <div className="w-96">
+          <div className="head bg-btn-blue "> <h4>Quiz app</h4>
           </div>
 
           <div className="modal-body">  
               <div className="question">       
-              <p>     What is stigma in the context of healthcare ?   </p>
+              <p className='text-btn-blue '>     Test Begin ?   </p>
               </div>
                   <div className="answers">   
                     
 
                    
-                    <div className="hide id" >3</div>
+                    <div className="hidden id" >3</div>
                        
               </div>
             
               <div className="navigations">
-                  <button className="navigation btn previous" id="previous">Previous</button>
-                  <button className="navigation btn next btn-learn-more" id="next">Next</button>
+                  <button className="navigation p-2 m-2 rounded-md previous bg-btn-blue" id="previous">Previous</button>
+                  <button className="navigation p-2 m-2 rounded-md next  bg-btn-blue" id="next">Next</button>
 
 
               </div>
@@ -176,19 +176,20 @@ default:
   return (
   
 
-<section className="bg-background w-full h-full">
+<section className="bg-background w-[100vw] h-[100vh] overflow-hidden">
 
 <NavBar/>
+<div className="bg-background z-[-999] absolute h-full w-full"></div>
 
+<div className="  w-3/5 m-auto h-full flex gap-7  items-center sm:flex-row flex-col justify-center">
 
-<div className="w-[100vw] h-full flex gap-7 p-10 items-center sm:flex-row flex-col justify-center">
+hidden
+hi
 
-
-
-<div className="container  w-fit h-96 rounded-lg ">
+<div className="container  w-fit h-auto rounded-lg ">
 {divContainer}
 </div>
-<div className="content flex flex-col gap-2 text-start align-top justify-start items-start sm:w-[600px]">  
+<div className="content flex   flex-col gap-2 text-start align-top justify-start items-start sm:w-[300px]">  
 <h1 className='font-bold text-white text-2xl'> {name}</h1>
 <p className='text-white '>
 {description}
