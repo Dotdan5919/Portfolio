@@ -1165,7 +1165,7 @@ Array.from(answers).forEach(function(x)
 
 
          
-let form=document.querySelector(".hiddenForm").submit();
+        location.reload();
 
     }
    else{
@@ -1410,6 +1410,70 @@ function timer()
 
 
 timer();
+
+
+
+
+
+// weather app
+
+
+
+const Url="https://api.openweathermap.org/data/2.5/weather?q=";
+const ApiKey="4e0a5e84af693647051d59129d15b8dc";
+var city=document.querySelector('.weather-input')   ;
+var weatherSubmit=document.querySelector('.weather-submit');
+
+
+async function checkWeather(city)
+{
+    const response= await fetch(Url + city + '&appid=' + ApiKey );
+    var data =await response.json();
+
+
+    console.log(data);
+
+    document.querySelector('.country').innerHTML=data.name + ", " + data.sys.country;
+    document.querySelector('.temperature').innerHTML=Math.round(data.main.temp - 273.15) + "°c";
+    document.querySelector('.humidity').innerHTML=data.main.humidity + "%";
+    document.querySelector('.wind-speed-text').innerHTML=data.wind.speed;
+   
+
+
+
+  
+
+
+
+
+
+
+
+}
+
+weatherSubmit && weatherSubmit.addEventListener("click",function()
+
+
+{
+    cityValue=city.value;
+
+checkWeather(cityValue)
+
+
+
+
+
+
+
+})
+
+
+
+
+
+
+
+
 
     
 };

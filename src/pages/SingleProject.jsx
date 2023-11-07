@@ -115,6 +115,91 @@ description="lorem     l l l l     l ll  ";
 
 break;
 
+case "6":
+divContainer=(<div class="weather-app">
+
+<h1>Weather  app</h1>
+
+
+<div class="weather-app-container">
+
+    <div class="input-group"> 
+    <input type="text" 
+    placeholder="search"
+     class="search weather-input"/>
+        <div class="search-circle btn-group weather-submit">
+    <i class="fa fa-search"></i>
+</div>
+
+</div>
+<div class="weather-status flex flex-col justify-center items-center"> 
+<div class="weather-icon"> 
+<i class="fa fa-cloud fa-4x"> </i>
+
+
+</div>
+
+<h1 class="temperature">0°C</h1>
+<p className='country'>country</p>
+
+</div>
+
+<div class="bottom-status">
+    <div class="humidity-container flex items-center justify-center gap-3">
+    <div class="humidity-icon">
+    <i class="fa fa-thermometer-empty fa-3x"></i>
+</div>
+<div class="humidity-text ">
+    <h5 class="humidity font-bold text-[25px]">0</h5>
+    <p>Humidity</p>
+
+</div>
+</div>
+
+
+<div class="wind-speed-container flex items-center gap-3 justify-center">
+
+    <div class="wind-speed-icon">
+        <i class="fa fa-mixcloud fa-3x" ></i>
+
+    </div>
+    <div class="wind-speed">
+<div className="flex flex-col">
+<div className="flex items-center justify-cente gap-1">
+<h5 class="wind-speed-text font-bold text-[25px]">
+    0 
+
+</h5>
+<p className='lowercase text-xs'> m/s</p>
+</div>
+
+<p>Wind <br /> Speed</p>
+</div>
+
+    </div>
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+</div>)
+name="weather App";
+description="Ask Google";
+
+break;
 
 case "7":
   divContainer=( <div className="  my-modal" >
@@ -183,8 +268,6 @@ default:
 
 <div className="  w-3/5 m-auto h-full flex gap-7  items-center sm:flex-row flex-col justify-center">
 
-hidden
-hi
 
 <div className="container  w-fit h-auto rounded-lg ">
 {divContainer}
