@@ -19,7 +19,7 @@ const ProjectPage = () => {
     <img src={Projects} alt="" srcset="" className='absolute opacity-30' />
     
 <h1 className='text-[40px] text-bold text-white'>Projects</h1>
-<div className="nav flex gap-6 text-white z-[12]">
+<div className="nav flex gap-6 text-white z-10 ">
 
 <p className='w-full p-2 transition  duration-10 ease-in-out rounded-md cursor-default cursor-default hover:border-2 ' onClick={()=>{setSkillName("All")}}>All</p>
   

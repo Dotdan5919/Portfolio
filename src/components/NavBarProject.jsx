@@ -23,15 +23,17 @@ const[activeNav,setActiveNav]=useState(false);
     
 
   return (
-    <div  className='w-full flex justify-between p-7 text-white relative z-[12] '>
-     <h1 className='hover:text-hover-blue transition duration-700 cursor-default text-[20px]'>  <Link to='/'>
-        Dani-<span className='font-bold'> El </span> </Link></h1>
+    <div  className='w-full flex justify-between p-7 text-white relative z-[999] '>
+    <h1 className='hover:text-hover-blue transition duration-700 cursor-default text-[20px]'>  <Link to='/' className='flex gap-1'>
+
+    <img src="D-logo.png" alt="" srcset="" className='w-8 h-8' />
+       Dani-<span className='font-bold'> El </span> </Link></h1>
    
      <ul className={activeNav ?navClasses :navClassesHidden} id='nav'  >
-        <li className='hover:text-hover-blue transition duration-700 cursor-default text-[20px] '><Link exact to="/" >  Home</Link></li>
-        <li className='hover:text-hover-blue transition duration-700 cursor-default text-[20px] '><a   href="home#about" >  About me </a > </li>
-        <li className='hover:text-hover-blue transition duration-700 cursor-default text-[20px] '><Link  exact to="/home#project" >  Projects </Link ></li>
-        <li className='hover:text-hover-blue transition duration-700 cursor-default text-[20px] '><Link  exact to="/home#contact" >  Contact </Link ></li>
+        <li className='hover:text-hover-blue transition duration-700 cursor-default text-[20px] '><Link onClick={()=>{setActiveNav(false) }} exact to="/"  >  Home</Link></li>
+        <li className='hover:text-hover-blue transition duration-700 cursor-default text-[20px] '><a  onClick={()=>{setActiveNav(false) }}  href="home#about"  >  About me </a > </li>
+        <li className='hover:text-hover-blue transition duration-700 cursor-default text-[20px] '><Link  onClick={()=>{setActiveNav(false) }} exact to="/home#project"  >  Projects </Link ></li>
+        <li className='hover:text-hover-blue transition duration-700 cursor-default text-[20px] '><Link  onClick={()=>{setActiveNav(false) }} exact to="/home#contact"  >  Contact </Link ></li>
         <li>
         
         <Btn name="Download Cv" myClass="bg-btn-blue hover:bg-hover-blue hover:shadow-lg" />

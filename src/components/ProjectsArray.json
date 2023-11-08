@@ -34,23 +34,23 @@
  
   {
     "name": "To-do list app",
-    "description": "This is a description of the project",
+    "description": "This is a to do list application, created using DOM manipulation in Javascript. It helps keep track of what you intend doing and what you have done",
     "image": "./images/Todo_app.png",
     "projectType": "Js",
     "projectId": 5,
     "url": ""
   },
   {
-    "name": "weather App",
-    "description": "This is a description of the project",
-    "image": "https://images.unsplash.com/photo-1692607334827-4da64dcf2221?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTl8fHxlbnwwfHx8fHw%3D",
+    "name": "Weather App",
+    "description": "This App was created using DOM manipulation and weather API. It's an app that is able to generate the current temperature of any city in the world. All you have to do is type the name of the city in the search box and the app gives you the Temprature,Humidity and Wind Speed ",
+    "image": "./images/weather_app.png",
     "projectType": "Js",
     "projectId": 6,
     "url": ""
   },
   {
     "name": "Quiz app",
-    "description": "This is a description of the project",
+    "description": "This Application is a simple quiz app, developed with Js, it displays various questions and sums your results in percentage.",
     "image": "./images/quiz_app.png",
     "projectType": "Js",
     "projectId": 7,
@@ -68,7 +68,7 @@
   {
     "name": "BETTER SUPPORT FOR SKIN AND SOFT TISSUE INFECTIONS FOR PEOPLE WHO INJECT DRUGS",
     "description": "Developed the backend of a website using PHP Laravel, including an admin panel and mini chatting system. The website allows users to create and manage accounts, post and view content, and communicate with each other through the mini chat system. The admin panel provides administrators with the ability to manage users, content, and settings.",
-    "image": "https://images.unsplash.com/photo-1692607334827-4da64dcf2221?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTl8fHxlbnwwfHx8fHw%3D",
+    "image": "./images/Project_holistique.png",
     "projectType": "Php",
     "projectId": 9,
     "url": ""

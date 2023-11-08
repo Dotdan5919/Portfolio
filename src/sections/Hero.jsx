@@ -19,7 +19,7 @@ const HeroPage = () => {
   
   return (
     <div className=' lg:px-[30px] px-2  min-height-100vh w-full relative  sm:py-0 py-5 ' id="hero">
-    <div className="hero w-full h-full bg-teal-100  absolute  z-[-5] opacity-20"></div>
+    <div className="hero w-full h-full bg-teal-100  absolute -left-8  z-[-5] opacity-20"></div>
 <NavBar/>
 <div className="blur z-[0] absolute top-[-500px] left-[-300px]  "></div>
 <div className="blur z-[0] absolute top-[20px] left-[900px]  "></div>

@@ -6,6 +6,10 @@ import { Link } from 'react-router-dom'
 import { useParams } from 'react-router-dom'
 
 import { useEffect } from 'react';
+import Projects from '../images/Projects.svg';
+import GlassContainer from '../components/GlassContainer';
+
+
 
 
 
@@ -22,6 +26,8 @@ let description="";
 
 
 let divContainer="";
+let viewWebsite="";
+let Tools="";
 
 
 useEffect(()=>{
@@ -83,13 +89,24 @@ case "4":
 </div>);
 
 name="Calculator";
-description="lorem     l l l l     l ll  ";
+description="This app was developed using Vanilla javascript.I used basic DOM manipulation to achieve everything on this App";
+Tools=( <div className='flex flex-col gap-5 '>   
+<h1 className=" text-white text-lg font-bold ">Tools</h1><div className="tools flex flex-wrap gap-2" > 
+<GlassContainer class="w-[140px] h-[100px] rounded-xl items-center p-2 flex flex-col " name="html" aos=" " text="Html" />
+<GlassContainer class="w-[140px] h-[100px] rounded-xl items-center p-2 flex flex-col " name="css" aos=" "  text="Css"/>
+<GlassContainer class="w-[140px] h-[100px] rounded-xl items-center p-2 flex flex-col " name="js" aos=" "  text="Js"/>
 
+
+
+
+
+</div> </div>);
 break;
 
 case "5":
 
-divContainer=(<div className="todo-list"><div className="todo-app">
+divContainer=(<div className="todo-list h-20">
+<div className="todo-app">
 <h1>To-do list</h1>
 <div action="">
 <input type="text" className="add-task text-black" placeholder="Add your task"/>
@@ -97,12 +114,6 @@ divContainer=(<div className="todo-list"><div className="todo-app">
 </div>
 <div className="all-tasks">
 
-<div className="task">
-<input type="checkbox" name="" id="task-checker" />
-<label className="" for="task-checker">Cooking</label>
-<span className="x"><i className="fa fa-close "></i></span>
-
-</div>
 
 </div>
 
@@ -111,14 +122,27 @@ divContainer=(<div className="todo-list"><div className="todo-app">
   );
 
 name="To do List app";
-description="lorem     l l l l     l ll  ";
+description="This is a to do list application, created using DOM manipulation in Javascript. It helps keep track of what you intend doing and what you have done";
+Tools=(
+  <div className='flex flex-col gap-5 '>   
+  <h1 className=" text-white text-lg font-bold ">Tools</h1>
+  
+  <div className="tools flex flex-wrap gap-2" > 
+<GlassContainer class="w-[140px] h-[100px] rounded-xl items-center p-2 flex flex-col " name="html" aos=" " text="Html" />
+<GlassContainer class="w-[140px] h-[100px] rounded-xl items-center p-2 flex flex-col " name="css" aos=" "  text="Css"/>
+<GlassContainer class="w-[140px] h-[100px] rounded-xl items-center p-2 flex flex-col " name="js" aos=" "  text="Js"/>
 
+
+
+
+
+</div> </div>);
 break;
 
 case "6":
-divContainer=(<div class="weather-app">
+divContainer=(<div class="weather-app  flex items-start justify-start">
 
-<h1>Weather  app</h1>
+
 
 
 <div class="weather-app-container">
@@ -196,9 +220,21 @@ divContainer=(<div class="weather-app">
 
 
 </div>)
-name="weather App";
-description="Ask Google";
+name="Weather App";
+description="This App was created using DOM manipulation and weather API. It's an app that is able to generate the current temperature of any city in the world. All you have to do is type the name of the city in the search box and the app gives you the Temprature,Humidity and Wind Speed ";
+Tools=(
+  <div className='flex flex-col gap-5 '>   
+  <h1 className=" text-white text-lg font-bold ">Tools</h1>
+  <div className="tools flex flex-wrap gap-2" > 
+<GlassContainer class="w-[140px] h-[100px] rounded-xl items-center p-2 flex flex-col " name="html" aos=" " text="Html" />
+<GlassContainer class="w-[140px] h-[100px] rounded-xl items-center p-2 flex flex-col " name="css" aos=" "  text="Css"/>
+<GlassContainer class="w-[140px] h-[100px] rounded-xl items-center p-2 flex flex-col " name="js" aos=" "  text="Js"/>
+<GlassContainer class="w-[140px] h-[100px] rounded-xl items-center p-2 flex justify-center font-bold text-lg "  aos=" "  text="API"/>
 
+
+
+
+</div></div>);
 break;
 
 case "7":
@@ -244,9 +280,53 @@ case "7":
     );
   
   name="Quiz app";
-  description="lorem     l l l l     l ll  ";
-break;
+  description="This Application is a simple quiz app, developed with Js, it displays various questions and sums your results in percentage.";
+  Tools=( <div className='flex flex-col gap-5 '>   
+  <h1 className=" text-white text-lg font-bold ">Tools</h1>
+    
+    <div className="tools flex flex-wrap gap-2" > 
+  <GlassContainer class="w-[140px] h-[100px] rounded-xl items-center p-2 flex flex-col " name="html" aos=" " text="Html" />
+  <GlassContainer class="w-[140px] h-[100px] rounded-xl items-center p-2 flex flex-col " name="css" aos=" "  text="Css"/>
+  <GlassContainer class="w-[140px] h-[100px] rounded-xl items-center p-2 flex flex-col " name="js" aos=" "  text="Js"/>
 
+  
+  
+  </div>
+  </div>);
+
+  break;
+
+
+case "9":
+  divContainer=(<div>
+    <video src=""></video>
+    </div>
+    
+    );
+   viewWebsite=(<Link className=' w-40 h-50 rounded-xl bg-btn-blue text-white p-1 items-center flex justify-center' exact to="www.projectholistique.com">View website</Link>);
+  
+  name="BETTER SUPPORT FOR SKIN AND SOFT TISSUE INFECTIONS FOR PEOPLE WHO INJECT DRUGS";
+  description="Developed the backend of a website using PHP Laravel, including an admin panel and mini chatting system. The website allows users to create and manage accounts, post and view content, and communicate with each other through the mini chat system. The admin panel provides administrators with the ability to manage users, content, and settings.";
+Tools=(
+  
+  <div className='flex flex-col gap-5 '>   
+<h1 className=" text-white text-lg font-bold ">Tools</h1>
+<div className="tools flex flex-wrap gap-2" > 
+<GlassContainer class="w-[140px] h-[100px] rounded-xl items-center p-2 flex flex-col " name="html" aos=" " text="Html" />
+<GlassContainer class="w-[140px] h-[100px] rounded-xl items-center p-2 flex flex-col " name="css" aos=" " text="Css" />
+
+
+
+<GlassContainer class="w-[140px] h-[100px] rounded-xl items-center p-2 flex flex-col " name="js" aos=" "  text="Js"/>
+<GlassContainer class="w-[140px] h-[100px] rounded-xl items-center p-2 flex flex-col " name="php" aos=" "  text="Php"/>
+<GlassContainer class="w-[140px] h-[100px] rounded-xl items-center p-2 flex flex-col " name="laravel" aos=" "  text="Laravel"/>
+
+
+</div>
+</div>);
+
+
+break;
 
 default:
 
@@ -261,26 +341,51 @@ default:
   return (
   
 
-<section className="bg-background w-[100vw] h-[100vh] overflow-hidden">
+<section className="bg-background w-[100vw] h-[100vh] relative">
+
 
 <NavBar/>
-<div className="bg-background z-[-999] absolute h-full w-full"></div>
+<div className="bg-background z-[-999] absolute  w-full h-[100vh] "></div>
+<img src={Projects} alt="" srcset="" className='absolute lg:left-60 left-0 right-0 opacity-30' />
+<GlassContainer class="p-10 absolute rounded-full w-[85px] h-[85px] left-9 top-[190px] z-[1]" aos=""/>
+<GlassContainer class="p-10 absolute rounded-full w-[85px] h-[85px] right-10 -bottom-[10px] z-[1]" aos=""/>
 
-<div className="  w-3/5 m-auto h-full flex gap-7  items-center sm:flex-row flex-col justify-center">
+<div className="  w-[80%] mx-auto  h-full flex gap-7  items-start pt-28  md:flex-row flex-col  justify-center ">
 
-
-<div className="container  w-fit h-auto rounded-lg ">
+<div className="flex items-start justify-center gap-5 sm:flex-row flex-col ">  
+<div className="container  w-fit h-auto rounded-lg  ">
 {divContainer}
 </div>
-<div className="content flex   flex-col gap-2 text-start align-top justify-start items-start sm:w-[300px]">  
+<div className="content flex   flex-col gap-2 text-start align-top justify-start items-start lg:w-[500px]">  
 <h1 className='font-bold text-white text-2xl'> {name}</h1>
 <p className='text-white '>
 {description}
 </p>
 
+{viewWebsite}
+<hr className='bg-white' />
+
+{Tools}
+
+
+
 
 </div>
+
+<div>
+
+
+
+
 </div>
+
+
+
+</div>
+
+</div>
+
+
 
 
 

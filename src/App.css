@@ -79,7 +79,7 @@ transition: .46s;
 
 .hero{
 
-  background: url('./images/hero-bg.png'), rgb(8, 18, 60) 50% / cover no-repeat;
+  background: url('./images/hero-bg.png'), rgb(8, 18, 60) 50% / contain no-repeat;
   background-blend-mode: soft-light;
   
 

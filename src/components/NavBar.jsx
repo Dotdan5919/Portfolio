@@ -23,20 +23,22 @@ const[activeNav,setActiveNav]=useState(false);
 
   return (
     <div data-aos="fade-left"  className='w-full flex justify-between p-7 text-white relative z-[12] '>
-     <h1 className='hover:text-hover-blue transition duration-700 cursor-default text-[20px]'>  <Link to='/'>
+     <h1 className='hover:text-hover-blue transition duration-700 cursor-default text-[20px]'>  <Link to='/' className='flex gap-1'>
+
+     <img src="D-logo.png" alt="" srcset="" className='w-8 h-8' />
         Dani-<span className='font-bold'> El </span> </Link></h1>
    
      <ul className={activeNav ?navClasses :navClassesHidden} id='nav'  >
-        <li className='hover:text-hover-blue transition duration-700 cursor-default text-[20px] '><Link to="hero" smooth={true} 
+        <li className='hover:text-hover-blue transition duration-700 cursor-default text-[20px]  ' ><Link onClick={()=>{setActiveNav(false) }} to="hero" smooth={true} 
 offset={50} 
 duration={500}>  Home</Link></li>
-        <li className='hover:text-hover-blue transition duration-700 cursor-default text-[20px] '><Link to="about" smooth={true} 
+        <li className='hover:text-hover-blue transition duration-700 cursor-default text-[20px] '><Link onClick={()=>{setActiveNav(false) }} to="about" smooth={true} 
 offset={50} 
 duration={500}>  About me</Link></li>
-        <li className='hover:text-hover-blue transition duration-700 cursor-default text-[20px] '><Link to="project" smooth={true} 
+        <li className='hover:text-hover-blue transition duration-700 cursor-default text-[20px] '><Link onClick={()=>{setActiveNav(false) }} to="project" smooth={true} 
 offset={50} 
 duration={500}>  Projects</Link></li>
-        <li className='hover:text-hover-blue transition duration-700 cursor-default text-[20px] '><Link to="footer" smooth={true} 
+        <li className='hover:text-hover-blue transition duration-700 cursor-default text-[20px] '><Link onClick={()=>{setActiveNav(false) }}  to="footer" smooth={true} 
 offset={50} 
 duration={500}>  Contact</Link></li>
         <li>
