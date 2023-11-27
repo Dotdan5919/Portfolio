@@ -23,20 +23,13 @@
     "projectId": 3,
     "url": "https://www.behance.net/gallery/152078593/Better-taste-Food-app-Case-study"
   },
-  {
-    "name": "Calculator",
-    "description": "This is a Calculator, was created with vanilla javascript.  It is a simple Dom manipulation \n Application",
-    "image": "./images/Calculator.png",
-    "projectType": "Js",
-    "projectId": 4,
-    "url": ""
-  },
+ 
  
   {
-    "name": "To-do list app",
-    "description": "This is a to do list application, created using DOM manipulation in Javascript. It helps keep track of what you intend doing and what you have done",
-    "image": "./images/Todo_app.png",
-    "projectType": "Js",
+    "name": "Light House Website",
+    "description": "The website is a user-friendly e-commerce platform built with React, featuring a seamless search function, effortless cart management, a personalized favorites list, and streamlined development using React hooks.",
+    "image": "./images/Lighthouse.png",
+    "projectType": "Rt",
     "projectId": 5,
     "url": ""
   },

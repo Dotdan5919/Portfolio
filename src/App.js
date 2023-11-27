@@ -8,21 +8,28 @@ import {BrowserRouter, Route, Link, Routes} from 'react-router-dom';
 
 
 
+
+
 function App() {
 
 
 
   return(
 
+    
     <BrowserRouter >
+
 <Routes>
 
-<Route path='/' exact element={<HomePage/>}/>
-<Route path='home' exact element={<HomePage/>}/>
+
+ 
+
+<Route path='/'  element={<HomePage/>}/>
+<Route path='home'  element={<HomePage/>}/>
 
 
 
-<Route path='/:id' exact  element={<SingleProject/>}/>
+<Route path="/:id"   element={<SingleProject/>}/>
 
 
 

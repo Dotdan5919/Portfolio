@@ -165,7 +165,7 @@ console.log(ProjectsArray)
 
 { isModal && ( <div className={" flex items-center justify-center  sm:w-[900px] w-full h-full absolute z-[999]"}>
       
-    <div className="lg:w-[60%] lg:h-fit items-center justify-center sm:p-3 p-2 max-h-max  rounded-lg w-[90%] fixed bg-background sm:top-[50px] top-[0px] flex flex-col items-center justify-start sm:gap-10 gap-4 " id="modal">
+    <div className="lg:w-[60%] lg:h-fit items-center justify-center sm:p-3 p-2 max-h-max  rounded-lg w-[90%] fixed bg-background sm:top-[50px] top-[40px] flex flex-col items-center justify-start sm:gap-10 gap-4 " id="modal">
     <div className="flex items-end justify-end   w-full"> 
     <FontAwesomeIcon icon={faClose} color="white" onClick={()=> {setIsModal(false)}   }/>
     </div>

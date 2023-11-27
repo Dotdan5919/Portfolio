@@ -48,14 +48,14 @@ const show="fixed w-20 h-20 rounded-full  items-center justify-center z-[999] te
     <div className='overflow-hidden w-screen relative '>
 <GlassContainer class={ isMovedUp?show:hide } name="up"  />
 
+<div className='sm:flex hidden'>
 
-
-    <GlassContainer class="p-10 absolute rounded-full w-[485px] h-[485px] -right-72 top-[900px]"/>
-    <GlassContainer class="p-10 absolute rounded-full w-[85px] h-[85px] right-72 top-[1690px] z-[1]"/>
-    <GlassContainer class="p-10 absolute rounded-full w-[85px] h-[85px] left-12 top-[1690px] z-[1]"/>
+    <GlassContainer class="p-10 absolute rounded-full w-[485px] h-[485px] sm:-right-72 -right-5 top-[900px]"/>
+    <GlassContainer class="p-10 absolute rounded-full w-[85px] h-[85px] sm:right-92 -right-4 top-[1690px] z-[1]"/>
+    <GlassContainer class="p-10 absolute rounded-full w-[85px] h-[85px] left-12 top-[1690px] sm:flex hidden z-[1]"/>
     <GlassContainer class="p-10 absolute rounded-full w-[85px] h-[85px] left-12 top-[2090px] z-[1]"/>
 
-
+    </div>
 
     <div className='absolute top-[100px] opacity-60 z-[0]'>
 <Ighodaro/></div>

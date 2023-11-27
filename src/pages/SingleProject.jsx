@@ -8,6 +8,8 @@ import { useParams } from 'react-router-dom'
 import { useEffect } from 'react';
 import Projects from '../images/Projects.svg';
 import GlassContainer from '../components/GlassContainer';
+import footer from '../components/footer';
+
 
 
 
@@ -105,24 +107,17 @@ break;
 
 case "5":
 
-divContainer=(<div className="todo-list h-20">
-<div className="todo-app">
-<h1>To-do list</h1>
-<div action="">
-<input type="text" className="add-task text-black" placeholder="Add your task"/>
-<input type="submit" value="Add" className="add-task-btn bg-yellow-500"/>
-</div>
-<div className="all-tasks">
-
-
+divContainer=(<div className='xl:w-[700px] xl:h-[600px] sm:w-96 sm:h-96 w-80 h-40 p-2 sm:mt-auto mt-[250px]  overflow-auto z-[999]'>
+<img src="images/Lighthouse.png" alt="" srcset="" className='w-full'/>
 </div>
 
-</div></div>
   
   );
+  viewWebsite=(<a className=' w-40 h-50 rounded-xl bg-btn-blue text-white p-1 items-center flex justify-center'  href="https://www.lighthouse.ighodarodaniel.com.ng">View website</a>);
+  
 
-name="To do List app";
-description="This is a to do list application, created using DOM manipulation in Javascript. It helps keep track of what you intend doing and what you have done";
+name="Lighthouse Website";
+description="This React-powered e-commerce platform offers a seamless shopping experience with effortless search, cart management, and favorites lists. Developed with React hooks, the website ensures a streamlined and maintainable codebase.";
 Tools=(
   <div className='flex flex-col gap-5 '>   
   <h1 className=" text-white text-lg font-bold ">Tools</h1>
@@ -130,6 +125,10 @@ Tools=(
   <div className="tools flex flex-wrap gap-2" > 
 <GlassContainer class="w-[140px] h-[100px] rounded-xl items-center p-2 flex flex-col " name="html" aos=" " text="Html" />
 <GlassContainer class="w-[140px] h-[100px] rounded-xl items-center p-2 flex flex-col " name="css" aos=" "  text="Css"/>
+<GlassContainer class="w-[140px] h-[100px] rounded-xl items-center p-2 flex flex-col " name="tailwind" aos=" "  text="Tailwind"/>
+<GlassContainer class="w-[140px] h-[100px] rounded-xl items-center p-2 flex flex-col " name="react" aos=" "  text="React"/>
+
+
 <GlassContainer class="w-[140px] h-[100px] rounded-xl items-center p-2 flex flex-col " name="js" aos=" "  text="Js"/>
 
 
@@ -140,12 +139,12 @@ Tools=(
 break;
 
 case "6":
-divContainer=(<div class="weather-app  flex items-start justify-start">
+divContainer=(<div class="weather-app h-[500px] sm:mt-auto   mt-[320px]  flex items-start justify-start">
 
 
 
 
-<div class="weather-app-container">
+<div class="weather-app-container sm:w-[400px] ">
 
     <div class="input-group"> 
     <input type="text" 
@@ -240,7 +239,7 @@ break;
 case "7":
   divContainer=( <div className="  my-modal" >
   <div className="card bg-white h-auto">
-      <div className="w-96">
+      <div className="sm:w-auto  sm:mt-auto   mt-[100px] w-[300px]">
           <div className="head bg-btn-blue "> <h4>Quiz app</h4>
           </div>
 
@@ -298,12 +297,12 @@ case "7":
 
 
 case "9":
-  divContainer=(<div>
-    <video src=""></video>
+  divContainer=(<div className='xl:w-[700px] xl:h-[600px] sm:w-96 sm:h-96 w-80 h-40 p-2 sm:mt-auto mt-[250px]  overflow-auto z-[999]'>
+    <img src="images/ProjectHolistique.jpg" alt="" srcset="" className='w-full'/>
     </div>
     
     );
-   viewWebsite=(<Link className=' w-40 h-50 rounded-xl bg-btn-blue text-white p-1 items-center flex justify-center' exact to="www.projectholistique.com">View website</Link>);
+   viewWebsite=(<a className=' w-40 h-50 rounded-xl bg-btn-blue text-white p-1 items-center flex justify-center'  href="https://www.projectholistique.com">View website</a>);
   
   name="BETTER SUPPORT FOR SKIN AND SOFT TISSUE INFECTIONS FOR PEOPLE WHO INJECT DRUGS";
   description="Developed the backend of a website using PHP Laravel, including an admin panel and mini chatting system. The website allows users to create and manage accounts, post and view content, and communicate with each other through the mini chat system. The admin panel provides administrators with the ability to manage users, content, and settings.";
@@ -341,22 +340,24 @@ default:
   return (
   
 
-<section className="bg-background w-[100vw] h-[100vh] relative">
+<section className="bg-background w-[100vw] h-auto  relative">
 
 
 <NavBar/>
-<div className="bg-background z-[-999] absolute  w-full h-[100vh] "></div>
-<img src={Projects} alt="" srcset="" className='absolute lg:left-60 left-0 right-0 opacity-30' />
+<div className="bg-background z-[0] absolute  w-full lg:h-[100vh]  h-[150vh] "></div>
+
+<img src={Projects} alt="" srcset="" className='absolute lg:left-60 left-0 right-0 opacity-30 z-[0]' />
 <GlassContainer class="p-10 absolute rounded-full w-[85px] h-[85px] left-9 top-[190px] z-[1]" aos=""/>
 <GlassContainer class="p-10 absolute rounded-full w-[85px] h-[85px] right-10 -bottom-[10px] z-[1]" aos=""/>
 
-<div className="  w-[80%] mx-auto  h-full flex gap-7  items-start pt-28  md:flex-row flex-col  justify-center ">
+<div className="flex flex-col gap-7 justify-between z-[4]">
+<div className="  w-[80%] mx-auto  h-full flex gap-7  items-start pt-28 pb-40  md:flex-row flex-col  justify-center ">
 
-<div className="flex items-start justify-center gap-5 sm:flex-row flex-col ">  
-<div className="container  w-fit h-auto rounded-lg  ">
+<div className="flex items-start justify-center gap-5 lg:flex-row flex-col ">  
+<div className="container  w-fit h-auto rounded-lg z-[4] ">
 {divContainer}
 </div>
-<div className="content flex   flex-col gap-2 text-start align-top justify-start items-start lg:w-[500px]">  
+<div className="content flex   flex-col gap-2 text-start align-top justify-start items-start lg:w-[500px] z-[4]">  
 <h1 className='font-bold text-white text-2xl'> {name}</h1>
 <p className='text-white '>
 {description}
@@ -384,9 +385,48 @@ default:
 </div>
 
 </div>
+<div className="flex flex-col gap-2 justify-center items-center">
+<hr className='w-[90%] border-white' />
+
+<div className=' p-7  flex items-center justify-center flex-col gap-3 bg-background'>
+  <div className='flex items-center justify-center gap-1'>
+<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 16 16" fill="none">
+<g clip-path="url(#clip0_109_234)">
+<path d="M0 1.146C0 0.513 0.526 0 1.175 0H14.825C15.474 0 16 0.513 16 1.146V14.854C16 15.487 15.474 16 14.825 16H1.175C0.526 16 0 15.487 0 14.854V1.146ZM4.943 13.394V6.169H2.542V13.394H4.943ZM3.743 5.182C4.58 5.182 5.101 4.628 5.101 3.934C5.086 3.225 4.581 2.686 3.759 2.686C2.937 2.686 2.4 3.226 2.4 3.934C2.4 4.628 2.921 5.182 3.727 5.182H3.743ZM8.651 13.394V9.359C8.651 9.143 8.667 8.927 8.731 8.773C8.904 8.342 9.299 7.895 9.963 7.895C10.832 7.895 11.179 8.557 11.179 9.529V13.394H13.58V9.25C13.58 7.03 12.396 5.998 10.816 5.998C9.542 5.998 8.971 6.698 8.651 7.191V7.216H8.635C8.64031 7.20765 8.64564 7.19932 8.651 7.191V6.169H6.251C6.281 6.847 6.251 13.394 6.251 13.394H8.651Z" fill="white"/>
+</g>
+<defs>
+<clipPath id="clip0_109_234">
+<rect width="16" height="16" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="25" height="20" viewBox="0 0 35 29" fill="none">
+<path d="M30.848 7.14006C30.8699 7.44668 30.8699 7.75336 30.8699 8.05998C30.8699 17.4121 23.7797 28.188 10.8208 28.188C6.82844 28.188 3.11972 27.0271 0 25.0122C0.567241 25.0779 1.11259 25.0998 1.70166 25.0998C4.99584 25.0998 8.02833 23.9828 10.4499 22.0774C7.35204 22.0116 4.7559 19.9747 3.86143 17.1712C4.29779 17.2369 4.73408 17.2807 5.19226 17.2807C5.82491 17.2807 6.45763 17.1931 7.04662 17.0399C3.81785 16.3827 1.39618 13.5355 1.39618 10.0969V10.0093C2.33424 10.5349 3.42513 10.8635 4.58131 10.9072C2.6833 9.63687 1.43983 7.46859 1.43983 5.01554C1.43983 3.70144 1.78882 2.49682 2.39971 1.44551C5.86849 5.73832 11.0826 8.54174 16.9293 8.84842C16.8202 8.32277 16.7547 7.77527 16.7547 7.22771C16.7547 3.32909 19.8963 0.15332 23.8013 0.15332C25.8302 0.15332 27.6628 1.0075 28.95 2.38733C30.5425 2.08072 32.0696 1.48933 33.4223 0.678975C32.8986 2.32167 31.786 3.7015 30.3244 4.57753C31.7424 4.42429 33.1169 4.02996 34.3822 3.48246C33.4224 4.88414 32.2225 6.13251 30.848 7.14006Z" fill="white"/>
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 33 34" fill="none">
+<g clip-path="url(#clip0_17_224)">
+  <path d="M11.3318 26.3186C11.3318 26.4467 11.1844 26.5492 10.9987 26.5492C10.7873 26.5684 10.64 26.4659 10.64 26.3186C10.64 26.1905 10.7873 26.088 10.9731 26.088C11.1652 26.0688 11.3318 26.1713 11.3318 26.3186ZM9.33971 26.0303C9.29487 26.1584 9.42298 26.3058 9.61514 26.3442C9.78168 26.4083 9.97384 26.3442 10.0123 26.2161C10.0507 26.088 9.929 25.9407 9.73684 25.883C9.5703 25.8382 9.38455 25.9022 9.33971 26.0303ZM12.1709 25.9215C11.9851 25.9663 11.857 26.088 11.8762 26.2353C11.8954 26.3634 12.062 26.4467 12.2541 26.4018C12.4399 26.357 12.568 26.2353 12.5488 26.1072C12.5296 25.9855 12.3566 25.9022 12.1709 25.9215ZM16.3856 1.37622C7.50138 1.37622 0.705322 8.12103 0.705322 17.0052C0.705322 24.1087 5.17624 30.1874 11.5624 32.3268C12.3822 32.4741 12.6705 31.9681 12.6705 31.5517C12.6705 31.1546 12.6513 28.964 12.6513 27.6189C12.6513 27.6189 8.16753 28.5797 7.22595 25.7101C7.22595 25.7101 6.49574 23.8461 5.44527 23.3657C5.44527 23.3657 3.97845 22.3601 5.54775 22.3793C5.54775 22.3793 7.14268 22.5074 8.02021 24.0319C9.42298 26.5043 11.7737 25.7933 12.6897 25.3706C12.837 24.3457 13.2534 23.6347 13.7146 23.212C10.134 22.8149 6.52136 22.296 6.52136 16.1341C6.52136 14.3726 7.00817 13.4887 8.03302 12.3614C7.86648 11.945 7.32203 10.2284 8.19956 8.01214C9.53827 7.5958 12.6192 9.74158 12.6192 9.74158C13.9003 9.38288 15.2775 9.19713 16.6418 9.19713C18.0061 9.19713 19.3833 9.38288 20.6643 9.74158C20.6643 9.74158 23.7453 7.58939 25.084 8.01214C25.9615 10.2348 25.4171 11.945 25.2506 12.3614C26.2754 13.4951 26.9031 14.379 26.9031 16.1341C26.9031 22.3152 23.1304 22.8085 19.5498 23.212C20.1391 23.718 20.6387 24.6788 20.6387 26.1841C20.6387 28.3427 20.6195 31.0137 20.6195 31.5389C20.6195 31.9553 20.9141 32.4613 21.7276 32.314C28.133 30.1874 32.4758 24.1087 32.4758 17.0052C32.4758 8.12103 25.2698 1.37622 16.3856 1.37622ZM6.9313 23.4682C6.84803 23.5323 6.86725 23.6796 6.97614 23.8013C7.07863 23.9038 7.22595 23.9486 7.30922 23.8653C7.39249 23.8013 7.37327 23.654 7.26438 23.5323C7.1619 23.4298 7.01457 23.3849 6.9313 23.4682ZM6.23953 22.9494C6.19469 23.0326 6.25874 23.1351 6.38685 23.1992C6.48934 23.2632 6.61744 23.244 6.66228 23.1543C6.70712 23.0711 6.64306 22.9686 6.51496 22.9045C6.38685 22.8661 6.28437 22.8853 6.23953 22.9494ZM8.31486 25.2297C8.21237 25.3129 8.2508 25.5051 8.39812 25.6268C8.54545 25.7741 8.7312 25.7933 8.81447 25.6909C8.89774 25.6076 8.85931 25.4154 8.7312 25.2937C8.59029 25.1464 8.39813 25.1272 8.31486 25.2297ZM7.58465 24.2881C7.48216 24.3521 7.48216 24.5187 7.58465 24.666C7.68713 24.8133 7.86008 24.8774 7.94335 24.8133C8.04583 24.7301 8.04583 24.5635 7.94335 24.4162C7.85367 24.2689 7.68713 24.2048 7.58465 24.2881Z" fill="white"/>
+</g>
+<defs>
+  <clipPath id="clip0_17_224">
+    <rect width="32.7953" height="32.7953" fill="white" transform="translate(0.192871 0.86377)"/>
+  </clipPath>
+</defs>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 42 27" fill="none">
+<path d="M17.2751 12.562C19.5607 11.4686 20.7538 9.81403 20.7538 7.23868C20.7538 2.15992 16.9732 0.922607 12.6104 0.922607H0.600098V26.4171H12.9482C17.577 26.4171 21.9254 24.1942 21.9254 19.0148C21.9254 15.8136 20.4088 13.4468 17.2751 12.562ZM6.19916 5.2748H11.4532C13.4729 5.2748 15.2913 5.8431 15.2913 8.18825C15.2913 10.3536 13.8754 11.224 11.8773 11.224H6.19916V5.2748ZM12.1863 22.0865H6.19916V15.0654H12.3013C14.7667 15.0654 16.3263 16.0941 16.3263 18.7054C16.3263 21.2808 14.4648 22.0865 12.1863 22.0865ZM37.9535 4.77124H27.6251V2.26064H37.9535V4.77124ZM42.0001 17.4537C42.0001 11.9937 38.8089 7.4401 33.0229 7.4401C27.4023 7.4401 23.5857 11.67 23.5857 17.2092C23.5857 22.9569 27.201 26.8991 33.0229 26.8991C37.4289 26.8991 40.2823 24.9136 41.6551 20.6909H37.1845C36.7029 22.2663 34.7192 23.1008 33.181 23.1008C30.2126 23.1008 28.6529 21.3599 28.6529 18.4033H41.957C41.9785 18.1012 42.0001 17.7775 42.0001 17.4537ZM28.6601 15.2093C28.8254 12.785 30.4354 11.2672 32.8648 11.2672C35.4092 11.2672 36.6885 12.7634 36.9042 15.2093H28.6601Z" fill="#FFFDFD"/>
+</svg>
 
 
+<hr />
+</div>
+<div className='text-white'>© Copyright 2023. Made by Ighodaro Daniel</div>
 
+</div>
+</div>
+</div>
 
 
 </section>

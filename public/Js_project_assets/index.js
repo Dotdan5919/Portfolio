@@ -345,12 +345,16 @@ if(exist=="false"){
     var i= document.createElement("i");
     var divTask=Tasks.appendChild(div);
     divTask.className="task";
+    divTask.classList="task w-full";
+
     
     var todoChecker=divTask.appendChild(input);
     todoChecker.id="task-checker";
     todoChecker.type="checkbox";
     
     var labeller=divTask.appendChild(label);
+    labeller.classList=" text-background  flex-wrap overflow-hidden flex";
+
     labeller.setAttribute("for","task-checker");
     labeller.textContent=val;
     

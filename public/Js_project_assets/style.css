@@ -261,6 +261,8 @@ padding-right: 1.5rem;
     .task label{
     
     color: black;
+    max-width: 400px;
+    height: auto;
     
     }
     
@@ -473,7 +475,7 @@ font-size: 35px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 400px;
+    
     gap: 60px;
 
 
