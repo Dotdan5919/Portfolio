@@ -23,8 +23,8 @@ const ProjectPage = () => {
 
 <p className='w-full p-2 transition  duration-10 ease-in-out rounded-md cursor-default cursor-default hover:border-2 ' onClick={()=>{setSkillName("All")}}>All</p>
   
-    <p className='w-full p-2 transition  duration-10 ease-in-out rounded-md cursor-default cursor-default hover:border-2 ' onClick={()=>{setSkillName("Ui")}}>Ui</p>
-    <p className='w-full p-2 transition  duration-10 ease-in-out rounded-md cursor-default cursor-default hover:border-2 ' onClick={()=>{setSkillName("Js")}}>Js</p>
+  {/*<p className='w-full p-2 transition  duration-10 ease-in-out rounded-md cursor-default cursor-default hover:border-2 ' onClick={()=>{setSkillName("Ui")}}>Ui</p>*/}
+    {/*<p className='w-full p-2 transition  duration-10 ease-in-out rounded-md cursor-default cursor-default hover:border-2 ' onClick={()=>{setSkillName("Js")}}>Js</p>*/ }
     <p className='w-full p-2 transition  duration-10 ease-in-out rounded-md cursor-default hover:border-2 ' onClick={()=>{setSkillName("React")}}>React</p>
     <p className='w-full p-2 transition  duration-10 ease-in-out rounded-md cursor-default cursor-default hover:border-2 ' onClick={()=>{setSkillName("Php")}}>Php/Laravel</p>
 </div>

@@ -1,14 +1,127 @@
-import React from 'react';
+import React, { useEffect, useRef ,useState} from 'react';
 
 import Dan from '../images/Daniel-3.png';
 import 'aos/dist/aos.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMailBulk} from '@fortawesome/free-solid-svg-icons';
-
+import emailjs from '@emailjs/browser';
 
 
 
 const FooterPage = () => {
+
+  const form=useRef();
+  
+  const emailRef=useRef();
+const [verifyEmail,setVerifyEmail]=useState();
+const [sendState,setSendState]=useState(false);
+const [formInput,setFormInput]=useState();
+
+  const sendMail=()=>{
+
+
+    emailjs.sendForm('service_tbmx7l6', 'template_pwgt1ob',form.current, 'vsgPr6d4Be4gEFu9X')
+        .then(
+          
+          
+          
+
+          (result) => {
+            
+            form.current.reset()
+            setSendState(false);
+          
+    
+   
+    
+            emailRef.current.value="";
+    
+        }, (error) => {
+          form.current.reset()
+          console.log(error)
+            
+        })
+    
+      }
+        
+
+  const verifyMe=async()=>
+  {
+  
+    const val=verifyEmail;
+  
+    const url = 'https://mailcheck.p.rapidapi.com/?domain='+val;
+    const options = {
+      method: 'GET',
+      headers: {
+        'X-RapidAPI-Key': '1fa1b2d733mshe73757629ab09f1p1a9202jsnd27da5229596',
+        'X-RapidAPI-Host': 'mailcheck.p.rapidapi.com'
+      }
+    };
+    
+    try {
+      const response = await fetch(url, options);
+      const result = await response.json();
+  
+     
+     const resultValue=await result.block;
+  
+  if(resultValue===true)
+  {
+  
+  
+    
+    
+    
+    
+  
+    alert("incorrect mail");
+    emailRef.current.value="";
+    
+  }
+  
+  else{
+    
+    sendMail()
+    
+  
+  
+  
+  
+  
+  }
+      
+      
+      
+     
+    } catch (error) {
+      console.error(error);
+      
+    }
+  
+  
+  }
+  
+const handleSubmit=(e)=>
+{
+
+   e.preventDefault();
+
+  
+   verifyMe();
+  
+
+
+}
+
+useEffect(()=>
+{
+
+
+  // sendState &&  sendMail(formInput);
+})
+
+
   return (
     <div className='h-full w-full pb-20 mt-40 flex w-full justify-center lg:flex-row flex-col-reverse  gap-10 items-center ' id="footer">
     
@@ -68,13 +181,15 @@ const FooterPage = () => {
 <div className="right flex flex-col gap-7  h-full items-start justify-start ">
 <h1 className='text-[40px] text-bold text-white'>Get in touch</h1>
 
-  <form action="" className='flex flex-col gap-5 sm:w-[600px]  w-[320px]'>
+  <form action="" className='flex flex-col gap-5 sm:w-[600px]  w-[320px]' onSubmit={(e)=>{handleSubmit(e)}} ref={form}>
   <div className="flex gap-4 w-full"> 
-  <input type="text" className='rounded-lg border-0 outline-2 outline-emerald-200 p-5 bg-white opacity-50 placeholder-gray-200 w-full '  placeholder='First Name'/>
-  <input type="text"  className='rounded-lg border-0 outline-2 outline-emerald-200 p-5 bg-white opacity-50 placeholder-gray-200 w-full ' placeholder='First Name'/></div>
-  <input type="text"  className='rounded-lg border-0 outline-2 outline-emerald-200 p-5 bg-white opacity-50 placeholder-gray-200 w-full ' placeholder='First Name'/>
-  <input type="text"  className='rounded-lg border-0 outline-2 outline-emerald-200 p-5 bg-white opacity-50 placeholder-gray-200  w-full' placeholder='First Name'/>
-  
+  <input type="text" className='rounded-lg border-0 outline-2 outline-emerald-200 p-5 bg-white bg-opacity-50 placeholder-gray-200 w-full ' name={"last_name"}  placeholder='Last Name'/>
+  <input type="text"  className='rounded-lg border-0 outline-2 outline-emerald-200 p-5 bg-white bg-opacity-50 placeholder-gray-200 w-full ' name={"first_name"} placeholder='First Name'/></div>
+  <input type="email" name='user_email' className='rounded-lg border-0 outline-2 outline-emerald-200 p-5 bg-white bg-opacity-50 placeholder-gray-200 w-full ' ref={emailRef} placeholder='Email' onChange={(e)=>{setVerifyEmail(e.target.value);}}/>
+  <input type="text" name='message' className='rounded-lg border-0 outline-2 outline-emerald-200 p-5 bg-white bg-opacity-50 placeholder-gray-200  w-full' placeholder='Message'/>
+  <input type="text" name='from_name' value={"Daniel"}  className='hidden'/>
+  <input type="text" name='mess' value={"Thank you for reaching us, we would get in touch with you shortly"}  className='hidden'/>
+
   
   <button  className='flex w-40 gap-2 rounded-xl bg-btn-blue p-3 text-white items-center justify-center '>Send Message <svg xmlns="http://www.w3.org/2000/svg" width="19" height="16" viewBox="0 0 19 16" fill="none">
   <path d="M0 16V10L8 8L0 6V0L19 8L0 16Z" fill="white"/>

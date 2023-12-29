@@ -3,60 +3,32 @@
     "name": "Portfolio Project",
     "description": "This portfolio website was designed with Figma, a powerful design tool that allowed me to create a visually appealing and user-friendly experience. The site features a clean and modern design, with a focus on showcasing my work in the best possible light.I used Figma to create a variety of different components and layouts, which I then assembled to create the final website..",
     "image": "./images/my-project.jpg",
-    "projectType": "Ui",
+    "projectType": "Rt",
     "projectId": 1,
-    "url": ""
-  },
-  {
-    "name": "triptop",
-    "description": "This UI project for a traveling app was designed to be both visually appealing and user-friendly. The app features a clean and modern design, with a focus on making it easy for users to find the information they need and book their travel arrangements.I used a variety of design elements to create a visually appealing and engaging experience for the user. For example, I used bright colors and bold fonts to create a sense of excitement and adventure. I also used high-quality images and videos to showcase the different destinations that the app offers.",
-    "image": "./images/triptop.jpg",
-    "projectType": "Ui",
-    "projectId": 2,
-    "url": "https://www.behance.net/gallery/150174999/Trip-top-ui-design"
-  },
-  {
-    "name": "Better taste Food app",
-    "description": "This food delivery app UI design was created with Figma, a powerful design tool that allowed me to create a visually appealing and user-friendly experience. The app features a clean and modern design, with a focus on making it easy for users to find the food they want and order it quickly and easily.I used Figma to create a variety of different components and layouts, which I then assembled to create the final app. This allowed me to experiment with different ideas and iterate quickly, until I was happy with the final result.",
-    "image": "./images/foodapp.jpg",
-    "projectType": "Ui",
-    "projectId": 3,
-    "url": "https://www.behance.net/gallery/152078593/Better-taste-Food-app-Case-study"
+    "url": "https://www.ighodarodaniel.com.ng/",
+    "tools":"HTML | CSS | Tailwind | JS | React | API | Figma"
   },
  
  
   {
     "name": "Light House Website",
-    "description": "The website is a user-friendly e-commerce platform built with React, featuring a seamless search function, effortless cart management, a personalized favorites list, and streamlined development using React hooks.",
+    "description": "The website is a user-friendly e-commerce platform built with React, featuring a seamless search function, effortless cart management, a personalized favorites list, and streamlined development using React hooks. Local storage and Eventbus API were used to manage the state and store some data in the browser",
     "image": "./images/Lighthouse.png",
     "projectType": "Rt",
     "projectId": 5,
-    "url": ""
-  },
-  {
-    "name": "Weather App",
-    "description": "This App was created using DOM manipulation and weather API. It's an app that is able to generate the current temperature of any city in the world. All you have to do is type the name of the city in the search box and the app gives you the Temprature,Humidity and Wind Speed ",
-    "image": "./images/weather_app.png",
-    "projectType": "Js",
-    "projectId": 6,
-    "url": ""
-  },
-  {
-    "name": "Quiz app",
-    "description": "This Application is a simple quiz app, developed with Js, it displays various questions and sums your results in percentage.",
-    "image": "./images/quiz_app.png",
-    "projectType": "Js",
-    "projectId": 7,
-    "url": ""
+    "url": "https://www.lighthouse.ighodarodaniel.com.ng/",
+    "tools":"HTML | CSS | Tailwind | JS | React | API "
   },
 
+
   {
-    "name": "movie app",
-    "description": "This is a description of the project",
-    "image": "https://images.unsplash.com/photo-1692607334827-4da64dcf2221?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTl8fHxlbnwwfHx8fHw%3D",
+    "name": "Moplay movie-app",
+    "description": "This is a Movie app developed with React using various react concepts,also various API's like:Email.js,movie Collection API and firebase auth was used to develop this website,The states were managed using contextual API",
+    "image": "./images/moplay.png",
     "projectType": "Rt",
     "projectId": 8,
-    "url": ""
+    "url": "https://moplay.ighodarodaniel.com.ng/",
+    "tools":"HTML | CSS | JS | React | Framer-motion | firebase | API "
   },
   {
     "name": "BETTER SUPPORT FOR SKIN AND SOFT TISSUE INFECTIONS FOR PEOPLE WHO INJECT DRUGS",
@@ -64,6 +36,7 @@
     "image": "./images/Project_holistique.png",
     "projectType": "Php",
     "projectId": 9,
-    "url": ""
+    "url": "https://projectholistique.com/",
+    "tools":"HTML | CSS | Bootstrap | JS |PHP| Laravel |Mysql database "
   }
 ]

@@ -27,6 +27,8 @@ let ProjectName=" ";
             let ProjectDescription=" ";
             let ProjectUrl=" ";
             let ProjectId=" ";
+            let ProjectTools=" ";
+
 
             
 
@@ -38,6 +40,8 @@ let ProjectName=" ";
                      ProjectDescription=x.description;
                      ProjectUrl=x.url;
                      ProjectId=x.projectId;
+                     ProjectTools=x.tools;
+
                     
                         
         
@@ -77,7 +81,7 @@ else{
 
 
 
-    let ProjectClass="w-64 h-74 relative hover:opacity-80 delay-150 hover:shadow-xl transition-all new-transition duration-900 rounded-lg ";
+    let ProjectClass="w-64 h-80 overflow-hidden  relative hover:opacity-80 delay-150 hover:shadow-xl transition-all new-transition duration-900 rounded-lg ";
     let uiElements=document.querySelectorAll(".Ui");
     let jsElements=document.querySelectorAll(".Js");
     let rtElements=document.querySelectorAll(".Rt");
@@ -186,6 +190,7 @@ console.log(ProjectsArray)
      {isUrl?(<Link  to={ProjectUrl} > View Project </Link> ) :( <a  href={"/"+ProjectId} > View Project </a>)}
    
     </button>
+    <h1 className='text-slate-300 text-sm'>{ProjectTools}</h1>
     </div>
     
     </div>
