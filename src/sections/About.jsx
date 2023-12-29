@@ -29,7 +29,7 @@ const AboutPage = () => {
 <h1 className='text-[40px] text-bold text-white'>About me</h1>
 <p className='text-white text-sm'>
 
-I am a web developer with over one year of experience in web development and UI design. I have a strong understanding of the full web development stack, including PHP, Laravel, React, Bootstrap, Tailwind, HTML, CSS, Git, GitHub, and Figma.
+I am a web developer with over one year of experience in web development and UI design. I have a strong understanding of the full web development stack, including PHP, Laravel, React, Bootstrap, Tailwind, HTML, CSS, Git, GitHub, Firebase and Figma.
 </p> 
 <p className='text-white text-sm'>
 I am proficient in building and maintaining high-quality web applications, and I have a passion for creating user-friendly and visually appealing interfaces. I am also a team player and I am always eager to learn new things.

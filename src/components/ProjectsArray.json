@@ -6,7 +6,8 @@
     "projectType": "Rt",
     "projectId": 1,
     "url": "https://www.ighodarodaniel.com.ng/",
-    "tools":"HTML | CSS | Tailwind | JS | React | API | Figma"
+    "git": "https://github.com/Dotdan5919/Portfolio",
+    "tools":"HTML | CSS | Tailwind | JS | React | API | Figma | Git | Github"
   },
  
  
@@ -17,7 +18,9 @@
     "projectType": "Rt",
     "projectId": 5,
     "url": "https://www.lighthouse.ighodarodaniel.com.ng/",
-    "tools":"HTML | CSS | Tailwind | JS | React | API "
+    
+    "git": "https://github.com/Dotdan5919/Lighthouse",
+    "tools":"HTML | CSS | Tailwind | JS | React | API |Git | Github"
   },
 
 
@@ -28,7 +31,9 @@
     "projectType": "Rt",
     "projectId": 8,
     "url": "https://moplay.ighodarodaniel.com.ng/",
-    "tools":"HTML | CSS | JS | React | Framer-motion | firebase | API "
+    
+    "git": "https://github.com/Dotdan5919/Movie-App",
+    "tools":"HTML | CSS | JS | React | Framer-motion | firebase | API | Git | Github"
   },
   {
     "name": "BETTER SUPPORT FOR SKIN AND SOFT TISSUE INFECTIONS FOR PEOPLE WHO INJECT DRUGS",
@@ -37,6 +42,8 @@
     "projectType": "Php",
     "projectId": 9,
     "url": "https://projectholistique.com/",
-    "tools":"HTML | CSS | Bootstrap | JS |PHP| Laravel |Mysql database "
+    "git": "",
+
+    "tools":"HTML | CSS | Bootstrap | JS |PHP| Laravel |Mysql Database | Git | Github "
   }
 ]

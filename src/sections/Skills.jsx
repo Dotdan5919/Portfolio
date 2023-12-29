@@ -1,5 +1,6 @@
 import React from 'react';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import Dan from '../images/Daniel-3.png';
 import 'aos/dist/aos.css';
 import GlassContainer from '../components/GlassContainer';
@@ -19,7 +20,7 @@ switch(skillsNo)
 {
 
 case 1:
-skillsLeft=(<div className="left-skills sm:left-auto left-10 flex flex-col gap-10 absolute z-[2] sm:w-[700px]  lg:w-[900px] lg:right-auto  ">
+skillsLeft=(<div className="left-skills sm:left-auto left-10 flex flex-col gap-10 absolute z-[2] sm:w-[700px]  lg:w-[900px] lg:right-auto  " >
 
 <GlassContainer name="html" class="lg:w-[383px] h-[10px]  lg:h-[110px]  w-[160px]  sm:w-[300px]  rounded-lg  items-center p-[20px] py-[70px]  gap-5 " text="Html" />
 <GlassContainer name="css" class="lg:w-[383px]  h-[10px] lg:h-[110px]  w-[160px]  sm:w-[300px] rounded-lg  items-center p-[20px] py-[70px]  gap-5 " text="Css" />
@@ -47,7 +48,7 @@ skillsRight=(<div className="right-skills right-10 sm:right-auto flex flex-col g
 break;
 
 case 2:
-  skillsLeft=(<div className="left-skills sm:left-auto left-10 flex flex-col gap-10 absolute z-[2] sm:w-[700px]  lg:w-[900px] lg:right-auto  ">
+  skillsLeft=(<div className="left-skills sm:left-auto left-10 flex flex-col gap-10 absolute z-[2] sm:w-[700px]  lg:w-[900px] lg:right-auto  "  >
 
   <GlassContainer name="RestAPI" class="lg:w-[383px] h-[10px]  lg:h-[110px]  w-[160px]  sm:w-[300px]  rounded-lg  items-center p-[20px] py-[70px]  gap-5 " text="RestAPI" />
   <GlassContainer name="Firebase" class="lg:w-[383px]  h-[10px] lg:h-[110px]  w-[160px]  sm:w-[300px] rounded-lg  items-center p-[20px] py-[70px]  gap-5 " text="Firebase" />

@@ -28,6 +28,8 @@ let ProjectName=" ";
             let ProjectUrl=" ";
             let ProjectId=" ";
             let ProjectTools=" ";
+            let ProjectGit=" ";
+
 
 
             
@@ -41,6 +43,8 @@ let ProjectName=" ";
                      ProjectUrl=x.url;
                      ProjectId=x.projectId;
                      ProjectTools=x.tools;
+                    ProjectGit=x.git;
+
 
                     
                         
@@ -179,17 +183,29 @@ console.log(ProjectsArray)
         <p>{ProjectName} </p>
         <small></small>
     </div>    </div>
-    <div className='md:w-[50%] w-4/5 flex sm:gap-5 gap-2 flex-col text-start '>
+    <div className='md:w-[50%] w-4/5 flex sm:gap-5 gap-4 flex-col text-start '>
     <h1 className='text-hover-blue font-bold text-xl '>{ProjectName}</h1>
     <p className='text-start text-white sm:text-sm text-[12px] leading-relaxed '>{ProjectDescription}</p>
-    <small></small>
+
 
     <hr />
+    <div className="flex gap-2">
      <button href={ProjectUrl} className=' w-40 h-50 rounded-xl bg-btn-blue text-white p-1 items-center justify-center '>
 
      {isUrl?(<Link  to={ProjectUrl} > View Project </Link> ) :( <a  href={"/"+ProjectId} > View Project </a>)}
    
     </button>
+   
+
+    {
+    ProjectGit===""?"":( <button href={ProjectUrl} className=' w-40 h-50 rounded-xl bg-btn-blue text-white p-1 items-center justify-center '><Link  to={ProjectGit} > View on github </Link> </button> )
+
+    }
+     
+   
+    
+    </div>
+
     <h1 className='text-slate-300 text-sm'>{ProjectTools}</h1>
     </div>
     
